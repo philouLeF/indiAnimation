@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+  font-size: 120%;
+}
+
+.exercise {
+  -webkit-box-shadow: 2px 2px 8px gray;
+          box-shadow: 2px 2px 8px gray;
+  width: 320px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+.exercise img {
+  max-width: 100%;
+  height: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: inline-block;
+}
+
+.exercise .translate {
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: -1;
+  background-color: white;
+  padding: 6% 6% 0 6%;
+}
+
+.exercise h3 {
+  font-weight: lighter;
+}
+
+.exercise .superpower {
+  color: #ce3e3e;
+}
+
+.exercise .lastChild {
+  background-color: white;
+  color: gray;
+  position: absolute;
+  bottom: 0%;
+  padding: 6%;
+  width: 100%;
+  z-index: 4;
+}
+
+.exercise:hover {
+  -webkit-box-shadow: 4px 4px 10px gray;
+          box-shadow: 4px 4px 10px gray;
+}
+
+.exercise:hover img {
+  opacity: 60%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.exercise:hover div {
+  height: 200px;
+}
+
+.exercise:hover .translate {
+  -webkit-transform: translate(0, -60%);
+          transform: translate(0, -60%);
+}
+/*# sourceMappingURL=style.css.map */

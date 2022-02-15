@@ -1,0 +1,54 @@
+body {
+    font: {
+        family: sans-serif;
+        size: 120%;
+    }
+}
+
+.exercise {
+    box-shadow: 2px 2px 8px gray;
+    width: 320px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    img {
+        max-width: 100%;
+        height: 50%;
+        transition: 1s;
+        display: inline-block;
+    }
+    .translate {
+        transition: 1s;
+        z-index: -1;
+        background-color: white;
+        padding: 6% 6% 0 6%;
+    }
+    h3 {
+        font-weight: lighter;
+    }
+    .superpower {
+        color: rgb(206, 62, 62);
+    }
+    .lastChild {
+        background-color: white;
+        color: gray;
+        position: absolute;
+        bottom: 0%;
+        padding: 6%;
+        width: 100%;
+        z-index: 4;
+    }
+    &:hover {
+        box-shadow: 4px 4px 10px gray;
+        img {
+            opacity: 60%;
+            transform: scale(1.2);
+        }
+        div {
+            height: 200px;
+        }
+        .translate {
+            transform: translate(0, -60%);
+        }
+    }
+}
